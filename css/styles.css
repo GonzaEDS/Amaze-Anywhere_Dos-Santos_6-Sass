@@ -27,7 +27,7 @@ body {
     font-family: var(--sansSerifFont);
 }
 
-header {
+/* header {
     background-color: var(--darkTransparentBg);
     font-family: 'Lato',sans-serif;
     height: var(--navHeight);
@@ -38,42 +38,6 @@ header {
 .logo {
     height: calc(1.8rem + 1.1vw);
 }
-
-/* start nav toggle icon*/
-.nav-toggle-label {
-    position: absolute;
-    top: 50%;
-    right: 5%;
-    color: white;
-    margin: -2px;
-}
-
-.navbar-toggler:focus {
-    box-shadow: none;
-}
-
-.nav-toggle-label span, .nav-toggle-label span::before, .nav-toggle-label span::after {
-    display: block;
-    background-color: white;
-    height: 2px;
-    width: 1.8em;
-    border-radius: 2px;
-    position: relative;
-}
-
-.nav-toggle-label span::before, .nav-toggle-label span::after {
-    content: '';
-    position: absolute;
-}
-
-.nav-toggle-label span::before {
-    top: 7px;
-}
-
-.nav-toggle-label span::after {
-    bottom: 7px;
-}
-/* ends nav toggle icon*/
 
 nav {
     position: absolute;
@@ -112,7 +76,7 @@ nav button {
     font-weight: bold;
     min-width: fit-content;
     border: none;
-}
+} */
 /* ends nav */
 
 .grid {
@@ -993,13 +957,13 @@ fieldset label, .col-form-label {
 @media screen and (min-width:992px) {
 
     /* bootstrap: */
-    header .navbar-collapse {
+    /* header .navbar-collapse {
         flex-basis: auto!important;
         flex-grow: 0!important;
         align-items: inherit;
-    }
+    } */
 
-    /* Navbar */
+    /* Navbar
     nav {
         all: unset;
     }
@@ -1049,7 +1013,7 @@ fieldset label, .col-form-label {
         background-color: var(--lighterPrimary);
         color: #0c0c0c;
         font-weight: 700;
-    }
+    } */
 
     .hero-banner {
         padding-left: 8rem;

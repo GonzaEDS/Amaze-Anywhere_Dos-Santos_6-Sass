@@ -1,0 +1,34 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Old+Standard+TT:ital,wght@0,700;1,400&family=Poppins:wght@600&display=swap');
+
+/* vars */
+
+$darkTransparentBg: #060606f7;
+$whiteText: rgb(238, 235, 235);
+$whiteBlueBg: #d4d4de;
+$primary: #287c81fa;
+$lighterPrimary: #98c4c7;
+$blackFont:#262729;
+$titlesFont: 'Old Standard TT',serif;
+$sansSerifFont: 'Lato', sans-serif;
+
+$bootstrap-lg: 992px;
+$bootstrap-xl: 1200px;
+
+
+:root {
+    scroll-behavior: smooth;
+    --navHeight: 8vh;
+}
+
+/* reset */
+*, *::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    max-width: 100vw;
+}
+
+body {
+    font-family: $sansSerifFont;
+}

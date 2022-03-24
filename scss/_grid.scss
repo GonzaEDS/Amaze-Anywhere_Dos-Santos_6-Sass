@@ -1,0 +1,51 @@
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100vh, repeat(3, auto);
+    grid-template-areas: "hero" "welcome" "best-routines" "single-payment";
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100vh repeat(3, auto);
+    grid-template-areas:
+        "banner"
+        "quick-info"
+        "about"
+        "goals";
+}
+
+.faqs-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100vh repeat(2, auto);
+    grid-template-areas: "banner" "faqs" "guarantee";
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100vh auto auto;
+    grid-template-areas: "banner" "quote" "reviews";
+}
+
+.buy-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100vh auto auto;
+    grid-template-areas: "banner" "summary" "buy-forms";
+}
+
+@media screen and (min-width:$bootstrap-xl ) {
+
+    .about-grid {
+        grid-template-rows: 55vh repeat(3, auto);
+
+    } 
+
+    .faqs-grid, .testimonials-grid, .buy-grid {
+        grid-template-rows: 55vh repeat(2, auto);
+    }
+    
+}
