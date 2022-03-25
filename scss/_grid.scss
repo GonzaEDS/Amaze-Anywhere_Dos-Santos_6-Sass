@@ -1,14 +1,25 @@
-.grid {
+@mixin grids {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 100vh, repeat(3, auto);
+}
+@mixin gridFourthSections {
+    @include grids; 
+    grid-template-rows: 100vh repeat(3, auto);
+
+}
+@mixin gridThreeSections {
+    @include grids;
+    grid-template-rows: 100vh repeat(2, auto);
+}
+
+
+.grid {
+    @include gridFourthSections;
     grid-template-areas: "hero" "welcome" "best-routines" "single-payment";
 }
 
 .about-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 100vh repeat(3, auto);
+    @include gridFourthSections;
     grid-template-areas:
         "banner"
         "quick-info"
@@ -17,25 +28,20 @@
 }
 
 .faqs-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 100vh repeat(2, auto);
+    @include gridThreeSections;
     grid-template-areas: "banner" "faqs" "guarantee";
 }
 
 .testimonials-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 100vh auto auto;
+    @include gridThreeSections;
     grid-template-areas: "banner" "quote" "reviews";
 }
 
 .buy-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 100vh auto auto;
+    @include gridThreeSections;
     grid-template-areas: "banner" "summary" "buy-forms";
 }
+
 
 @media screen and (min-width:$bootstrap-xl ) {
 

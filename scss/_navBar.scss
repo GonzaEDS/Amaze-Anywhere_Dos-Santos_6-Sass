@@ -49,7 +49,36 @@ header {
     }
 }
 
-/* bootstrap lg */
+@media  screen and (min-width: $iphone12) {
+    nav {
+        button {
+            font-size: 1rem;
+        }
+    }
+}
+
+@media screen and (min-width: $ipadMini) {
+    nav {
+        li {
+            a {
+                line-height: 1.3;
+            }
+        }
+        button {
+            font-size: 1.4rem;
+        }
+    }   
+    
+}
+
+@media screen and (min-width: $ipadAir) {
+    nav {
+        ul {
+            gap: 0.9em;
+        }
+    }
+    
+}
 
 @media screen and (min-width: $bootstrap-lg) {
 
@@ -109,4 +138,10 @@ header {
         }
     }
     
+}
+
+@media screen and (min-width: $bootstrap-lg) {
+    header {
+        padding: 0 3rem 0 2rem;
+    }  
 }
