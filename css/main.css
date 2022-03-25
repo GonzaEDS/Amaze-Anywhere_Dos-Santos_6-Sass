@@ -611,15 +611,15 @@ header {
         font-size: calc(1rem + 0.55vw); } }
 
 @media screen and (min-width: 1200px) {
-  .course-goals .quick-info {
+  .quick-info {
     border-top: 2em solid #2a023447; }
-    .course-goals .quick-info .info-card {
+    .quick-info .info-card {
       flex-direction: row;
       height: 100%;
       width: 40%;
       justify-content: center;
       align-items: center; }
-  .course-goals .about-grid .hero-banner {
+  .about-grid .hero-banner {
     padding-left: 0; }
   .course-goals h1 {
     font-size: calc(1rem + 2.4vw);

@@ -244,24 +244,24 @@
 }
 
 @media screen and (min-width: $bootstrap-xl) {
-    .course-goals {
+    
 
-        .quick-info {
-            border-top: 2em solid #2a023447;
-            .info-card {
-                flex-direction: row;
-                height: 100%;
-                width: 40%;
-                justify-content: center;
-                align-items: center;
-            }
+    .quick-info {
+        border-top: 2em solid #2a023447;
+        .info-card {
+            flex-direction: row;
+            height: 100%;
+            width: 40%;
+            justify-content: center;
+            align-items: center;
         }
-        .about-grid {
-            .hero-banner {
-                padding-left: 0;
-            }
-        } 
-        
+    }
+    .about-grid {
+        .hero-banner {
+            padding-left: 0;
+        }
+    } 
+    .course-goals {   
         h1 {
             font-size: calc(1rem + 2.4vw);
             align-self: flex-start;
